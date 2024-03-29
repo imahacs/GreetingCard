@@ -3,7 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #36A1BC;
+    background-color: #1c336d;
 }
 
 .greetingCard{
@@ -26,8 +26,9 @@ body{
     transform: rotateY(-160deg);
 }
 
-.greetingCard:hover .cardFrontText {
+.greetingCard:hover .imfFront {
     visibility: hidden;
+    background-color: #104082;
 }
 
 .cardFront{
