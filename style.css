@@ -3,7 +3,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #0e4f5f;
+    background-color: #0c5567;
 }
 
 .greetingCard{
@@ -28,12 +28,12 @@ body{
 
 .greetingCard:hover .imfFront {
     visibility: hidden;
-    background-color: #104082;
+    /* background-color: #104082; */
 }
 
 .cardFront{
     position: relative;
-    background: #ffffff;
+    background: #047592;
     width: 250px;
     height: 350px;
     overflow: hidden;
@@ -42,13 +42,13 @@ body{
     transform: 0.6s;
 }
 
-.cardFrontText{
+/* .cardFrontText{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-align: center;
     margin: 30px;
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     transform: 0,1s;
-}
+} 
 
 .balloons{
     position: absolute;
@@ -124,7 +124,7 @@ body{
 
 .balloon-4::after {
     border-bottom: 10px solid #0c7a9f;
-}
+}*/
 
 .cardInside{
     position: absolute;
@@ -138,7 +138,7 @@ body{
     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
 }
 
-.p{
+/* .p{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin: 40px;
     color: #333;
@@ -158,5 +158,5 @@ body{
     color: #333;
     text-align: right;
     outline-color: #333;
-}
+} */
 
