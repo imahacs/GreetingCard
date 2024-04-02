@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Logo.svg">
     <title>عيد مسار</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -33,26 +41,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="flex items-center justify-center h-screen bg-cyan-900">
-    <div
-        class="greetingCard relative cursor-pointer transform-style-preserve-3d transform-perspective-2500 transition duration-1000 hover:transform-rotate-5 hover:shadow-inner-100 hover:shadow-10">
-        <div class="cardFront ">
-            <img class="imfFront md:w-96 w-36" src="./img/strong_first_hand.png" alt="">
-            <h3 class="cardFrontText"></h3>
-            <!-- <div class="balloons">
+<body class="bg-cyan-950">
+    <div class="flex items-center h-screen justify-center">
+        <div
+            class="greetingCard relative cursor-pointer transform-style-preserve-3d transform-perspective-2500 transition duration-1000 hover:transform-rotate-5 hover:shadow-inner-100 hover:shadow-10">
+            <div class="cardFront ">
+                <img class="imfFront md:w-96 w-36" src="./img/strong_first_hand.png" alt="">
+                <h3 class="cardFrontText"></h3>
+                <!-- <div class="balloons">
                 <div class="balloon-1"></div>
                 <div class="balloon-2"></div>
                 <div class="balloon-3"></div>
                 <div class="balloon-4"></div>
             </div> -->
-        </div>
-        <div class="cardInside">
-            <img class="imginside md:w-96 w-36" src="./img/masar_greeting.png" alt="">
-            <!-- <h3 class="title">كل عام وانتم بخير</h3>
-            <p class="body">نتمنى لكم عيداً سعيداً وأياماً مليئة بالفرح والسعادة</p>
-            <p class="from">فريق مسار</p> -->
+            </div>
+            <div class="cardInside">
+                <img class="imginside md:w-96 w-36" src="./img/masar_greeting.png" alt="">
+            </div>
         </div>
     </div>
+    <footer class="footer text-white text-center">
+        <h3 class="title">كل عام وانتم بخير</h3>
+        <!-- <p class="body">نتمنى لكم عيداً سعيداً وأياماً مليئة بالفرح والسعادة</p> -->
+        <p class="from">فريق مسار</p>
+    </footer>
+
 </body>
 
 </html>
