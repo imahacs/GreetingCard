@@ -6,15 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عيد مسار</title>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="greetingCard">
-        <div class="cardFront">
-            <img class="imfFront" src="./img/strong_first_hand.png" alt="" style="height: 350px; width: 250px;">
-            <h3 class="cardFrontText"> عيد مسار</h3>
+<body class="flex items-center justify-center h-screen bg-cyan-900">
+    <div
+        class="greetingCard relative cursor-pointer transform-style-preserve-3d transform-perspective-2500 transition duration-1000 hover:transform-rotate-5 hover:shadow-inner-100 hover:shadow-10">
+        <div class="cardFront ">
+            <img class="imfFront md:w-96 w-36" src="./img/strong_first_hand.png" alt="">
+            <h3 class="cardFrontText"></h3>
             <!-- <div class="balloons">
                 <div class="balloon-1"></div>
                 <div class="balloon-2"></div>
@@ -23,7 +47,7 @@
             </div> -->
         </div>
         <div class="cardInside">
-            <img class="imginside" src="./img/masar_greeting.png" alt="" style="height: 350px; width: 250px;">
+            <img class="imginside md:w-96 w-36" src="./img/masar_greeting.png" alt="">
             <!-- <h3 class="title">كل عام وانتم بخير</h3>
             <p class="body">نتمنى لكم عيداً سعيداً وأياماً مليئة بالفرح والسعادة</p>
             <p class="from">فريق مسار</p> -->

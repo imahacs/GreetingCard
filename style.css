@@ -1,12 +1,12 @@
-body{
+/* body{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #0c5567;
-}
+} */
 
-.greetingCard{
+/* .greetingCard{
     position: relative;
     width: 250px;
     height: 350px;
@@ -14,12 +14,12 @@ body{
     transform-style: preserve-3d;
     transform: perspective(2500px);
     transition: 1s;
-}
+} */
 
 .greetingCard:hover{
     transform: perspective(2500px) rotate(5deg);    
-    box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 
-    0 10px 100px rgba(0,0,0,0.5);
+    /* box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 
+    0 10px 100px rgba(0,0,0,0.5); */
 }
 
 .greetingCard:hover .cardFront{
@@ -32,11 +32,11 @@ body{
 }
 
 .cardFront{
-    position: relative;
     background: #047592;
-    width: 250px;
+    /* position: relative;
+    width: 250px; 
     height: 350px;
-    overflow: hidden;
+    overflow: hidden;*/
     transform-origin: left;
     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2), 30px 0 50px rgba(0,0,0,0.5);
     transform: 0.6s;
@@ -128,13 +128,13 @@ body{
 
 .cardInside{
     position: absolute;
-    background-color: #ffffff;
-    width: 250px;
-    height: 350px;
+    /* background-color: #ffffff; */
+    /* width: 250px;
+    height: 350px; */
     z-index: -1;
     left: 0;
     top: 0;
-    text-align: right;
+    /* text-align: right; */
     box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
 }
 
