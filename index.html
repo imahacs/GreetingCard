@@ -2,70 +2,121 @@
 <html lang="ar">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/Logo.svg">
-    <title>عيد مسار</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/Logo.svg">
+  <title>عيد مسار</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
         }
-    </script>
-    <style type="text/tailwindcss">
-        @layer utilities {
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
           .content-auto {
             content-visibility: auto;
           }
         }
       </style>
 
+  <!-- JQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-cyan-950">
-    <div class="flex items-center h-screen justify-center">
-        <div
-            class="greetingCard relative cursor-pointer transform-style-preserve-3d transform-perspective-2500 transition duration-1000 hover:transform-rotate-5 hover:shadow-inner-100 hover:shadow-10">
-            <div class="cardFront ">
-                <img class="imfFront md:w-96 w-36" src="./img/strong_first_hand.png" alt="">
-                <h3 class="cardFrontText"></h3>
-                <!-- <div class="balloons">
-                <div class="balloon-1"></div>
-                <div class="balloon-2"></div>
-                <div class="balloon-3"></div>
-                <div class="balloon-4"></div>
-            </div> -->
-            </div>
-            <div class="cardInside">
-                <img class="imginside md:w-96 w-36" src="./img/masar_greeting.png" alt="">
-            </div>
-        </div>
-    </div>
-    <footer class="footer text-white text-center">
-        <h3 class="title">كل عام وانتم بخير</h3>
-        <!-- <p class="body">نتمنى لكم عيداً سعيداً وأياماً مليئة بالفرح والسعادة</p> -->
-        <p class="from">فريق مسار</p>
-    </footer>
 
+  <header>
+
+    <!-- Hero section with background image, heading, subheading and button -->
+    <div class="relative overflow-hidden">
+      <video autoplay muted loop class="h-16">
+        <!-- <source src="audio/EidVideo.mp4" type="video/mp4"> -->
+      </video>
+      <!-- <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed"> -->
+      <div class="flex h-full items-center justify-center">
+        <div class="px-6 text-center text-white md:px-12">
+          <!-- <h1 class="mb-4 text-5xl font-bold">كُل عامٍ وأنتم بخيّر</h1>
+            <h3 class="mb-8 text-xl font-bold">عيد مسار</h3> -->
+          <div class="logo absolute top-3 right-5">
+            <img src="./img/Logo.svg" alt="مسار" class="w-14 ">
+          </div>
+          <div class="player">
+            <label class="switch absolute top-0 left-5">
+              <input type="checkbox" class="switch-input">
+              <span class="switch-label" data-on="On" data-off="Off"></span>
+              <span class="switch-handle"></span>
+            </label>
+          </div>
+          <audio id="audio" loop autoplay src="audio/EidSound.mp3"></audio>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- <section class="bg-cyan-700 h-52 border-t rounded-t">
+    <div class="flex h-full items-center justify-center">
+      <div class="px-6 text-center text-cyan-950 md:px-12">
+        <h1 class="mb-4 text-5xl font-bold"> </h1>
+        <h3 class="mb-8 text-xl font-bold">عيد مسار</h3>
+      </div>
+    </div>
+  </section> -->
+
+
+  <div class="flex h-96 md:h-screen items-center justify-center mb-24">
+    <div
+      class="greetingCard relative cursor-pointer transform-style-preserve-3d transform-perspective-2500 transition duration-1000 hover:transform-rotate-5 hover:shadow-inner-100 hover:shadow-10 ">
+      <div class="cardFront ">
+        <img class="imfFront md:w-96 w-36 " src="./img/strong_first_hand.png" alt="">
+      </div>
+      <div class="cardInside">
+        <a href="https://masar-roulette.netlify.app" target="_blank">
+          <img class="imginside md:w-96 w-36" src="./img/masar_greeting.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer flex h-full items-center justify-center mb-5 bottom-0">
+      <div class="text-center md:px-12 text-white text-sm md:text-xl">
+        <h6 class="mb-2 font-bold">كُل عامٍ وأنتم بخيّر</h6>
+        <a href="https://linktr.ee/masar_2030" class="underline hover:text-cyan-600 buttom-5 font-bold ">فريق
+          مسار</a>
+      </div>
+  </footer>
+  <!-- <footer class="footer text-white text-center text-xs">
+    <h3 class="title">كل عام وأنتم بخير</h3>
+    <p class="body">نتمنى لكم عيداً سعيداً وأياماً مليئة بالفرح والسعادة</p>
+    <p class="from">فريق مسار</p>
+  </footer> -->
+
+
+  <script src="switch.js"></script>
 </body>
 
 </html>
