@@ -40,9 +40,11 @@ Swal.fire({
   if (result.isConfirmed) {
     $('input[type="checkbox"]').attr("checked", true);
     audio.play();
+    bdayBallons();
   }
   $('input[type="checkbox"]').attr("checked", true);
     audio.play();
+    bdayBallons();
 });
 
 $('input[type="checkbox"]').click(function () {
