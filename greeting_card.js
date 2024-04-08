@@ -15,6 +15,7 @@ document.querySelector('.greetingCard').addEventListener('mouseover', function (
             // Optionally, add some attributes or styles to the new parent
             newParent.href = 'https://masar-roulette.vercel.app'; // Ensure the protocol is included for absolute URLs
             newParent.id = uniqueID; // Set the unique ID
+            newParent.target = "_blank";
 
             // Insert the new parent into the DOM right before the existing element
             existingElement.parentNode.insertBefore(newParent, existingElement);
