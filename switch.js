@@ -31,6 +31,20 @@
 
 //Triggering the player using checkbox:
 var audio = document.getElementById('audio');
+
+Swal.fire({
+  text: 'لتجربة أفضل يرجى تفعيل امكانية الوصول للصوت',
+  confirmButtonText: 'حسناً',
+  confirmButtonColor: '#0b4f69'
+}).then((result) => {
+  if (result.isConfirmed) {
+    $('input[type="checkbox"]').attr("checked", true);
+    audio.play();
+  }
+  $('input[type="checkbox"]').attr("checked", true);
+    audio.play();
+});
+
 $('input[type="checkbox"]').click(function () {
   if ($(this).prop("checked") == true) {
     audio.play();
